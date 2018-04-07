@@ -3,9 +3,10 @@ import { Route, Switch } from "react-router-dom";
 import Home from "../containers/Home";
 import Login from "../containers/Login";
 import NotFound from "../components/NotFound";
-export default () => 
+import AppliedRoute from "../components/AppliedRoute";
+export default ({ childProps }) => 
 	<Switch>
-		<Route path="/" exact component={Home} />
-		<Route path="/login" exact component={Login} />
+		<AppliedRoute path="/" exact component={Home} props={childProps} />
+		<AppliedRoute path="/login" exact component={Login} props={childProps}/>
 		<Route component={NotFound} />
 	</Switch>

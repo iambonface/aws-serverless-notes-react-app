@@ -9,7 +9,7 @@ class Login extends Component {
 		super(props);
 		this.state = {
 			email: "",
-			password: ""
+			password: "",
 		};
 	}
 
@@ -27,7 +27,7 @@ class Login extends Component {
 		event.preventDefault();
 		try {
 			await Auth.signIn(this.state.email, this.state.password);
-			alert("Logged in")
+			this.props.userHasAuthenticated(true)
 		} catch (e) {
 			alert(e.message);
 		}
