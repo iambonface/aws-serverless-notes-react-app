@@ -1,6 +1,15 @@
 import Amplify from "aws-amplify";
 import config from "./config";
 
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from "react-router-dom";
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+
+const root = document.getElementById("root");
+
 Amplify.configure({
 	Auth: {
 		mandatorySignIn: true,
@@ -25,14 +34,6 @@ Amplify.configure({
 	}
 })
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from "react-router-dom";
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-
-const root = document.getElementById("root");
 
 ReactDOM.render(
 	<Router>
