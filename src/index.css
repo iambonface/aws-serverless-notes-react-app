@@ -9,3 +9,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "PT Serif", serif;
 }
+
+/* Make form field not to zoom in on focus in mobile browser
+   Set minimum font size of 16px */
+select.form-control,
+textarea.form-control,
+input.form-control {
+	font-size: 16px
+}
+/* Set width to prevent scroll and overflow */
+input[type=file] {
+	width: 100%;
+}
