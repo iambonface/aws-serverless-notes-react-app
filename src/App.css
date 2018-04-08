@@ -1,7 +1,15 @@
 .App {
   margin-top: 15px;
+  background: #44ccf5;
 }
 
 .App .navbar-brand {
   font-weight: bold;
 }
+
+.App .navbar {
+  background: #44ccf5;
+  color: #000000;
+  border: none;
+}
+

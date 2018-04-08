@@ -4,8 +4,17 @@
 	}
 
 	.Login form {
-		margin: 0 auto;
 		max-width: 320px;
+	}
+
+}
+	.Login .logo {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.Login form {
+		margin: 0 auto;
 	}
 
 	h3 {
@@ -17,9 +26,3 @@
 		height: 80px;
 		width: 80px;
 	}
-	.Login .logo {
-		justify-content: center;
-		text-align: center;
-	}
-
-}

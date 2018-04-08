@@ -3,7 +3,9 @@ body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333;
+  color: #000;
+  background: #44ccf5;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
