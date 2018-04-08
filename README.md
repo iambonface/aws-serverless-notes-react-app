@@ -1,6 +1,6 @@
 # Notes App Serverless ReactJS Client
 
-This is a ReactJS client that can consume a AWS serverless API. 
+This is a ReactJS client that can consume an AWS serverless API. 
 
 * User can create account
 * User can login
@@ -11,7 +11,8 @@ This is a ReactJS client that can consume a AWS serverless API.
 I have abstracted my config.js file but you can create one in root folder and specify your AWS credentials as below
 
 This step assumes you have already configured your serverless API. 
-For this specific client, we shall be consume the API available on the repo: Please checkout [SERVERLESS-API](https://github.com/iambonface/aws-serverless-notes-api) 
+For this specific client, we shall be consuming an API available on the below repo: 
+Please checkout [SERVERLESS-API](https://github.com/iambonface/aws-serverless-notes-api) 
 
 ```
    export default {
