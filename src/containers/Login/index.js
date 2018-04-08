@@ -4,7 +4,6 @@ import LoaderButton from "../../components/LoaderButton";
 import "./Login.css";
 import { Auth } from "aws-amplify";
 
-
 class Login extends Component {
 	constructor(props) {
 		super(props);
@@ -40,8 +39,15 @@ class Login extends Component {
 	render() {
 		return(
 			<div className="Login">
+			<div className="inner-login">
+				<div className="logo">
+					<img src={process.env.PUBLIC_URL + 'ms-icon-144x144.png'} 
+					className="login-image"
+					alt="logo" />
+				</div>
+				<h3>Log In</h3>
 				<form onSubmit={this.handleSubmit}>
-					<FormGroup controlId="email" bsSize="large">
+					<FormGroup controlId="email" bsSize="large" validationState="primary">
 						<ControlLabel>Email</ControlLabel>
 						<FormControl
 							autoFocus
@@ -49,6 +55,7 @@ class Login extends Component {
 							value={this.state.email}
 							onChange={this.handleChange}
 						/>
+
 					</FormGroup>
 					<FormGroup controlId="password">
 						<ControlLabel>Password</ControlLabel>
@@ -61,12 +68,14 @@ class Login extends Component {
 					<LoaderButton
 						block
 						bsSize="large"
+						bsStyle="primary"
 						disabled={!this.validateForm()}
 						type="submit"
 						isLoading={this.state.isLoading}
 						text="Login"
 						loadingText="Logging in..." />
 				</form>
+				</div>
 			</div>
 
 		);
