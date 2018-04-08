@@ -1,10 +1,13 @@
 # Notes App Serverless ReactJS Client
 
-This is a ReactJS client that can consume an AWS serverless API. 
+This is a ReactJS client that can consume an AWS serverless API. The App is based on a tutorial by Jay V with some custom modifications, including changes in UI
 
 * User can create account
 * User can login
 * User can create notes
+
+### UI
+![screenshot from 2018-04-08 19-57-54](https://user-images.githubusercontent.com/16631356/38470142-65b171a4-3b67-11e8-8c1a-52d59651f37e.png)
 
 ### Configuration
 
